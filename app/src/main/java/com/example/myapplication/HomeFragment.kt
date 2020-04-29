@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.fragment_home.*
 
 /**
@@ -27,6 +28,9 @@ class HomeFragment : Fragment() {
         instaAdapter = InstaAdapter(view.context)
         rv_home.adapter = instaAdapter //리사이클러뷰의 어댑터를 instaAdapter로 지정해줌
         loadDatas() //데이터를 임의로 생성하고 어댑터에 전달해주겠습니다
+        rv_home.apply {
+            addItemDecoration(ExampleItemDecoration())
+        }
     }
 
     private fun loadDatas() {
