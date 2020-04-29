@@ -7,11 +7,15 @@
     tools:context=".HomeFragment">
 
     <androidx.recyclerview.widget.RecyclerView
+        android:padding="12dp"
+        android:clipToPadding="false"
         android:id="@+id/rv_home"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
         android:orientation="vertical"
-        tools:listitem="@layout/item_insta"/>
+        tools:listitem="@layout/item_insta"
+
+        />
 
 </FrameLayout>
