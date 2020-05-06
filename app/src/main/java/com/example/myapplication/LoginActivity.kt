@@ -8,17 +8,13 @@ import android.widget.Button
 import android.widget.EditText
 import android.widget.TextView
 import android.widget.Toast
+import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
-
-        val et_id = findViewById<EditText>(R.id.et_id)
-        val et_pwd = findViewById<EditText>(R.id.et_pwd)
-        val btn_login = findViewById<Button>(R.id.btn_login)
-        val tv_register = findViewById<TextView>(R.id.tv_register)
 
         btn_login.setOnClickListener {
             if(et_id.text.isNullOrBlank()||et_pwd.text.isNullOrBlank()){
@@ -32,8 +28,6 @@ class LoginActivity : AppCompatActivity() {
             val intent = Intent(this,RegisterActivity::class.java)
             startActivityForResult(intent, 201)
         }
-
-
     }
 
     override fun onActivityResult(requestCode: Int, resultCode: Int, data: Intent?) {
@@ -41,8 +35,6 @@ class LoginActivity : AppCompatActivity() {
 
         val id = data?.getStringExtra("id")
         val pass = data?.getStringExtra("pass")
-        val et_id = findViewById<EditText>(R.id.et_id)
-        val et_pwd = findViewById<EditText>(R.id.et_pwd)
 
         et_id.setText(id)
         et_pwd.setText(pass)
