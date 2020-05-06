@@ -26,7 +26,5 @@ class RegisterActivity : AppCompatActivity() {
             finish()
 
         }
-
-
     }
 }
