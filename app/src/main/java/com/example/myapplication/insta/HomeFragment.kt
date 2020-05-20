@@ -1,11 +1,11 @@
-package com.example.myapplication
+package com.example.myapplication.insta
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-import androidx.recyclerview.widget.LinearLayoutManager
+import com.example.myapplication.R
 import kotlinx.android.synthetic.main.fragment_home.*
 
 /**
@@ -35,22 +35,25 @@ class HomeFragment : Fragment() {
         datas.apply {
             add(
                 InstaData(
-                userName = "강희원",
-                img_profile1 = "https://images.unsplash.com/photo-1502759683299-cdcd6974244f?auto=format&fit=crop&w=440&h=220&q=60",
-                img_contents1 = "https://cdn.pixabay.com/photo/2020/04/26/05/56/daisies-5093658__480.jpg"
-            ))
+                    userName = "강희원",
+                    img_profile1 = "https://cdn.pixabay.com/photo/2020/04/26/00/57/ornamental-quince-5093163__480.jpg",
+                    img_contents1 = "https://cdn.pixabay.com/photo/2020/04/25/09/42/house-mouse-5090096__480.jpg"
+                )
+            )
             add(
                 InstaData(
-                userName = "안드로이드",
-                img_profile1 = "https://cdn.pixabay.com/photo/2020/04/25/09/42/house-mouse-5090096__480.jpg",
-                img_contents1 = "https://cdn.pixabay.com/photo/2020/04/26/00/57/ornamental-quince-5093163__480.jpg"
-            ))
+                    userName = "안드로이드",
+                    img_profile1 = "https://cdn.pixabay.com/photo/2020/04/25/09/42/house-mouse-5090096__480.jpg",
+                    img_contents1 = "https://cdn.pixabay.com/photo/2020/04/26/00/57/ornamental-quince-5093163__480.jpg"
+                )
+            )
             add(
                 InstaData(
-                userName = "최고",
-                img_profile1 = "https://cdn.pixabay.com/photo/2020/04/27/15/00/friends-5100219__480.jpg",
-                img_contents1 = "https://cdn.pixabay.com/photo/2020/04/18/17/10/bernese-mountain-dog-5060025__480.jpg"
-            ))
+                    userName = "최고",
+                    img_profile1 = "https://cdn.pixabay.com/photo/2020/04/27/15/00/friends-5100219__480.jpg",
+                    img_contents1 = "https://cdn.pixabay.com/photo/2020/04/18/17/10/bernese-mountain-dog-5060025__480.jpg"
+                )
+            )
         }
         instaAdapter.datas = datas
         instaAdapter.notifyDataSetChanged()

@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.example.myapplication.insta
 
 import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager

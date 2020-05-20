@@ -1,11 +1,10 @@
-package com.example.myapplication
+package com.example.myapplication.insta
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.viewpager.widget.ViewPager
+import com.example.myapplication.R
 import kotlinx.android.synthetic.main.activity_main.*
-import kotlinx.android.synthetic.main.fragment_home.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -13,7 +12,10 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        main_viewPager.adapter = MainPagerAdapter(supportFragmentManager)
+        main_viewPager.adapter =
+            MainPagerAdapter(
+                supportFragmentManager
+            )
         main_viewPager.offscreenPageLimit = 2
         main_viewPager.addOnPageChangeListener(object : ViewPager.OnPageChangeListener {
             override fun onPageScrollStateChanged(state: Int) {

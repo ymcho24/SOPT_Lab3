@@ -1,4 +1,4 @@
-package com.example.myapplication
+package com.example.myapplication.insta
 
 data class InstaData(
     val userName : String,
