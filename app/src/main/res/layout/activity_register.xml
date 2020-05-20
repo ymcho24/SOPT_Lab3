@@ -29,7 +29,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="25dp"
-        android:hint="이메일"
+        android:hint="아이디"
         android:layout_marginTop="24dp"
         android:inputType="textEmailAddress"
         />
@@ -45,21 +45,33 @@
         />
 
     <EditText
+        android:id="@+id/et_name"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="25dp"
-        android:hint="비밀번호 확인"
+        android:hint="이름"
         android:layout_marginTop="5dp"
-        android:inputType="textPassword"
+        android:inputType="text"
         />
 
     <EditText
+        android:id="@+id/et_email"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginHorizontal="25dp"
-        android:hint="GitHub 닉네임"
+        android:hint="이메일"
         android:layout_marginTop="5dp"
-        android:inputType="text"
+        android:inputType="textEmailAddress"
+        />
+
+    <EditText
+        android:id="@+id/et_number"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="25dp"
+        android:hint="전화번호"
+        android:layout_marginTop="5dp"
+        android:inputType="phone"
         />
 
     <Button

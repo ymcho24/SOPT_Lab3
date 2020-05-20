@@ -21,7 +21,7 @@
         android:layout_below="@+id/image"
         android:layout_marginHorizontal="40dp"
         android:layout_marginTop="20dp"
-        android:hint="이메일"
+        android:hint="아이디"
         android:inputType="textEmailAddress"
         />
 
