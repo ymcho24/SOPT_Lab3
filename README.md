@@ -3,6 +3,8 @@
 
 ### 기본과제 1
 
+![ezgif com-video-to-gif](https://user-images.githubusercontent.com/52772787/82639882-933a4480-9c44-11ea-9ddf-1920d3804d34.gif)
+
 - 회원가입 부분도 인터페이스에 함께 추가
 
 interface RequestInterface{
