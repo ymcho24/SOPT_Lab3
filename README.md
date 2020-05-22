@@ -3,6 +3,21 @@
 
 ▶ 기본과제 1
 
+
+
+interface RequestInterface{
+
+    @POST("/user/signin")
+    fun requestLogin(@Body body : RequestLogin) : Call<ResponseLogin>
+
+    @POST("/user/signup")
+    fun requestRegister(@Body body : RequestRegister) : Call<ResponseRegister>
+    
+}
+
+
+-> 회원가입 부분도 인터페이스에 함께 추가
+
 참고 : https://blog.naver.com/zion830/221661486117
 
 
