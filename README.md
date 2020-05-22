@@ -1,7 +1,7 @@
 # SOPT_Lab3
 ※ 과제는 해당되는 branch에 각각 업로드 했습니다.
 
-### 기본과제 1
+## 기본과제 1
 
 - 회원가입 부분도 인터페이스에 함께 추가
 
@@ -21,7 +21,7 @@ interface RequestInterface{
 - 참고 : https://blog.naver.com/zion830/221661486117
 
 
-### 기본과제 2
+## 기본과제 2
 
 - login 관련 클래스 → login package
 
